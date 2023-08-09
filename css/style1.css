@@ -1,0 +1,381 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GyeonggiTitleM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+/* ----------------------------------------------------------------- */
+body{
+  font-weight: 300;
+  color: #222;
+  font-family: 'Noto Sans', sans-serif;
+}
+.top{position: fixed;
+    right: 40px;
+    bottom: 30px;}
+
+.top a{
+  display: block;
+  background: url(../img/topbutton.png) no-repeat center center;
+      background-size: 60px 60px;
+      border-radius: 50px;
+/*       border: 1px solid rgb(0, 30, 99); */
+      width: 60px;
+      height: 60px;
+
+    }
+
+/* -------------------------------------------------------header */
+
+header{ 
+  width: 100%;
+  height: 70px;
+}
+nav{
+  /* border: 1px solid #000; */
+  width: 1400px;
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;/* 양 끝으로 배치 */
+  align-items: center;
+  margin: auto;
+}
+
+.logo{transform: rotateX(20deg);
+      margin-top: 5px;}
+
+.topmenu{display: flex;}
+.topmenu li{margin: 0 30px;}
+.topmenu li a{
+      font-size: 18px;
+    font-weight: 500;
+    color: rgb(22, 22, 165);
+    position: relative;
+    }
+.topmenu li a:before{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: rgb(1, 1, 120);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.topmenu li a:hover:before{width: 100%;}
+/* .topmenu li a:hover{color: red;} */
+
+
+
+.utilMenu{display: flex;}
+.utilMenu li{padding-right: 20px;
+            font-size: 25px;
+          }
+.utilMenu li .fa-instagram:hover{
+  color: darkviolet;
+  transition: 0.25s;
+}
+.utilMenu li .fa-youtube:hover{
+  color: red;
+  transition: 0.25s;
+}
+.utilMenu li .fa-square-facebook:hover{
+  color: rgb(43, 43, 229);
+  transition: 0.25s;
+}
+.utilMenu li .fa-twitter:hover{
+  color: skyblue;
+}
+main{
+  width: 100%;
+  height: 800px;
+  background: url(../img/cass_main.jpg) no-repeat center center fixed;
+  background-size: cover ;
+}
+
+/* ----------------------------------------------------section */
+
+section {width: 100%;
+        text-align: center;
+
+
+}
+
+h2 {  font-family: 'GongGothicMedium';
+          font-size: 50px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-top: 100px;
+          color: #222;
+
+      }
+      
+#container1 h4{font-family: 'TheJamsil5Bold';
+        font-size: 19px;
+        padding-top:30px;
+        line-height: 25px;
+        color: #222;
+      }
+
+
+.title{ font-family: 'GyeonggiTitleM';
+  font-size: 20px;
+  padding:60px 0 35px 0;
+}
+.btitle{ font-family: 'GyeonggiTitleM';
+  font-size: 18px;
+  padding: 45px 0 55px 0;
+}
+
+
+.content{width: 1400px;
+
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin: 50px auto;
+line-height: 22px;}
+
+.fresh_img1{
+  width: 200px;
+  height: 200px;
+/*   border: 1px solid rgb(209, 178, 2); */
+  border-radius: 50%;
+  background: url(../img/mac-a.jpg) no-repeat center center;
+  background-size: 250px 250px;
+  box-shadow: 1px 1px 10px #c5c5c5;
+  margin: auto;
+}
+.fresh_img2{
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 10px #c5c5c5;
+  border-radius: 50%;
+  background: url(../img/ist.jpg) no-repeat center center;
+  background-size: 210px 210px;
+  margin: auto;
+}
+
+.fresh_img3{
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 10px #c5c5c5;
+  border-radius: 50%;
+  background: url(../img/hop.jpg) no-repeat center center;
+  background-size: 250px 250px;
+  margin: auto;
+}
+
+.fresh_img4{
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 10px #c5c5c5;
+  border-radius: 50%;
+  background: url(../img/water.jpg) no-repeat center center;
+  background-size: 250px 250px;
+  margin: auto;
+}
+
+
+
+#container2{
+  display: flex;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product{ 
+  
+      margin-top: -150px;
+      width: 1400px;
+      height: 700px;
+      display: flex;
+
+      }
+
+.product li{
+/*   border-right: 5px solid #000; */
+ flex: 1;
+ transition: 0.5s;
+}
+
+.product li:last-child{border-right:none;}
+.product li:nth-child(1){background: url(../img/cassfresh.png)
+  no-repeat right center;
+  background-size: 1000px 700px;}
+.product li:nth-child(2){background: url(../img/cass0.0.png)
+  no-repeat right center;
+  background-size: 1000px 700px;}
+.product li:nth-child(3){background: url(../img/casslight.png)
+  no-repeat right center;
+  background-size: 1000px 700px;
+  }
+
+.product li:hover{flex: 5;}
+
+#container3{
+  background-color: rgb(203, 228, 255);
+  height: 800px;
+  margin-top: -130px;
+}
+
+
+
+.first-cam{
+  width: 1200px;
+  margin: 60px auto;
+  position: relative;
+      top: 0;
+      left: 0;
+}
+
+.first-cam ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap: 55px;
+}
+
+.first-cam ul li p{
+  font-family: 'GongGothicMedium';
+  padding-top: 20px;
+  font-size: 17px;
+  color: #222;
+
+}
+
+.fa-chevron-left{
+    position: absolute;
+    top: 210px;
+    left: -70px;
+    font-size: 40px;
+    color: rgb(0, 65, 130);
+    cursor: pointer;
+}
+.fa-chevron-right{
+  position: absolute;
+  top: 210px;
+  right: -70px;
+  font-size: 40px;
+  color: rgb(0, 65, 130);
+  cursor: pointer;
+}
+
+#container4{
+  background-color: rgb(203, 228, 255);
+  height: 800px;
+
+}
+
+#container4 ul li a p{ display: block;
+    text-align: left;
+    font-family: 'GongGothicMedium';
+    font-size: 20px;
+    color: #222;
+    padding: 4px;
+  }
+#container4 ul li a p:before{
+  content: '\f105';
+  font-family: fontawesome;
+  margin-right: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+/* #container4 ul li a span{font-weight: 300;
+  font-size: 28px;} */
+
+#container4 ul li a p:hover:before{opacity: 1;}
+#container4:hover p{opacity: 0.3;}
+#container4 ul li a p:hover{opacity: 1;
+    color: darkblue;}
+
+
+#container4 .allbox{
+                    margin-top: 70px;
+                    display: flex;
+                    justify-content: center;
+                    }
+#container4 .allbox .box{display: flex;
+    justify-content: center;
+    align-items: center;}
+
+@keyframes circle{
+  0%{ 
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#container4 .box{position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 40px;}
+#container4 .box > span{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 1px solid rgba(47, 113, 178,0.5);
+  border-radius: 58% 42% 51% 49% / 34% 52% 48% 66%;
+  /* 80% 20% 72% 28% / 18% 79% 21% 82% ; */
+}
+
+.box span:nth-child(1){animation: circle 6s linear infinite;}
+.box span:nth-child(2){animation: circle 8s linear infinite reverse;}
+.box span:nth-child(3){animation: circle 12s linear infinite;}
+
+
+/* -----------------------------------------------------footer */
+
+footer{
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  /* height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+#footer_in{
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f_logo img{
+  padding-right: 30px;
+  filter: grayscale();
+  opacity: 0.6;
+}
+
+
+address{
+        font-style: normal;
+        line-height: 20px;
+        font-size: 14px;}
+
+address > p {font-size: 13px;
+            padding-top: 10px;
+            font-weight: bold;
+            color: #888;}  
