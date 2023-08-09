@@ -162,6 +162,7 @@ line-height: 22px;}
 /*   border: 1px solid rgb(209, 178, 2); */
   border-radius: 50%;
   background: url(../img/mac-a.jpg) no-repeat center center;
+  box-shadow: 1px 1px 10px #a2a2a2;
   background-size: 250px 250px;
   margin: auto;
   transition: 0.3s;
@@ -177,6 +178,7 @@ line-height: 22px;}
   border-radius: 50%;
   background: url(../img/ist.jpg) no-repeat center center;
   background-size: 210px 210px;
+  box-shadow: 1px 1px 10px #a2a2a2;
   margin: auto;
   transition: 0.3s;
 }
@@ -188,6 +190,7 @@ line-height: 22px;}
   height: 200px;
   border-radius: 50%;
   background: url(../img/hop.jpg) no-repeat center center;
+  box-shadow: 1px 1px 10px #a2a2a2;
   background-size: 250px 250px;
   margin: auto;
   transition: 0.3s;
@@ -200,6 +203,7 @@ line-height: 22px;}
   height: 200px;
   border-radius: 50%;
   background: url(../img/water.jpg) no-repeat center center;
+  box-shadow: 1px 1px 10px #a2a2a2;
   background-size: 250px 250px;
   margin: auto;
   transition: 0.3s;
